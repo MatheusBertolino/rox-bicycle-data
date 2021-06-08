@@ -14,8 +14,8 @@ CREATE TABLE IF NOT EXISTS `rox`.`person` (
     `LastName` VARCHAR(255) NOT NULL,
     `Suffix` VARCHAR(255),
     `EmailPromotion` INT NOT NULL,
-    `AdditionalContactInfo` VARCHAR(65535),
-    `Demographics` VARCHAR(65535) NOT NULL,
+    `AdditionalContactInfo` VARCHAR(10000),
+    `Demographics` VARCHAR(10000) NOT NULL,
     `rowguid` VARCHAR(255) NOT NULL,
     `ModifiedDate` DATETIME NOT NULL,
     PRIMARY KEY (`BusinessEntityID`)
