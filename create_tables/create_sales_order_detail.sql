@@ -19,7 +19,7 @@ CREATE TABLE IF NOT EXISTS `rox`.`sales_order_detail` (
     PRIMARY KEY (`SalesOrderDetailID`),
     INDEX `SalesOrderID_idx` (`SalesOrderID`),
     INDEX `SpecialOfferIDProductID_idx` (`SpecialOfferID`,`ProductID`),
-    FOREIGN KEY (`SalesOrderID`) REFERENCES `rox`.`sales_order_header` (`SalesOrderID`)
+    FOREIGN KEY (`SalesOrderID`) REFERENCES `rox`.`sales_order_header` (`SalesOrderID`),
     FOREIGN KEY (`SpecialOfferID`,`ProductID`) REFERENCES `rox`.`special_offer_product` (`SpecialOfferID`,`ProductID`)
 );
 
