@@ -12,7 +12,7 @@ CREATE TABLE IF NOT EXISTS `rox`.`special_offer_product` (
     PRIMARY KEY (`SpecialOfferID`,`ProductID`),
     INDEX `ProductID_idx` (`ProductID`),
     FOREIGN KEY (`ProductID`) REFERENCES `rox`.`product` (`ProductID`)
-)
+);
 
 SET SQL_MODE=@OLD_SQL_MODE;
 SET FOREIGN_KEY_CHECKS=@OLD_FOREIGN_KEY_CHECKS;

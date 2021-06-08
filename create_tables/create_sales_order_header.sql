@@ -34,7 +34,7 @@ CREATE TABLE IF NOT EXISTS `rox`.`sales_order_header` (
     PRIMARY KEY (`SalesOrderID`),
     INDEX `CustomerID_idx` (`CustomerID`),
     FOREIGN KEY (`CustomerID`) REFERENCES `rox`.`customer` (`CustomerID`)
-)
+);
 
 SET SQL_MODE=@OLD_SQL_MODE;
 SET FOREIGN_KEY_CHECKS=@OLD_FOREIGN_KEY_CHECKS;

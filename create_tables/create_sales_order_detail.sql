@@ -21,7 +21,7 @@ CREATE TABLE IF NOT EXISTS `rox`.`sales_order_detail` (
     INDEX `SpecialOfferIDProductID_idx` (`SpecialOfferID`,`ProductID`),
     FOREIGN KEY (`SalesOrderID`) REFERENCES `rox`.`sales_order_header` (`SalesOrderID`)
     FOREIGN KEY (`SpecialOfferID`,`ProductID`) REFERENCES `rox`.`special_offer_product` (`SpecialOfferID`,`ProductID`)
-)
+);
 
 SET SQL_MODE=@OLD_SQL_MODE;
 SET FOREIGN_KEY_CHECKS=@OLD_FOREIGN_KEY_CHECKS;

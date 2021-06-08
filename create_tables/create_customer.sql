@@ -15,7 +15,7 @@ CREATE TABLE IF NOT EXISTS `rox`.`customer` (
     PRIMARY KEY (`CustomerID`),
     INDEX `PersonID_idx` (`PersonID`),
     FOREIGN KEY (`PersonID`) REFERENCES `rox`.`person` (`BusinessEntityID`)
-)
+);
 
 SET SQL_MODE=@OLD_SQL_MODE;
 SET FOREIGN_KEY_CHECKS=@OLD_FOREIGN_KEY_CHECKS;
